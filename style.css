@@ -1,0 +1,88 @@
+*{
+    color: white;
+}
+li , p , a {
+    font-size: 1.3rem;
+}
+
+h1 {
+    font-size: 2rem;
+    
+}
+
+.countener {
+    width: 100%;
+    position: relative;
+}
+
+.countener header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 200px 200px 1fr;
+}
+
+.countener header .logo {
+    grid-column: 1/7;
+    justify-self: center;
+    align-self: center;
+}
+
+.countener header .nav {
+    width: 70%;
+    margin: 0 auto;
+    grid-column: 1/7;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    align-items: center;
+    background-color: rgb(54, 109, 121);
+    height:50px ;
+    border-radius: 25px;
+}
+
+.countener header .nav .nav-list {
+    grid-column:1/5;
+    justify-self: left;
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    margin: 0;
+    padding: 0 15px;
+}
+
+.countener header .nav .nav-lon {
+    grid-column: 5/7;
+    justify-self: right;
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    margin: 0;
+    padding: 0 15px;
+}
+
+.countener header .company-info{
+    width: 60%;
+    grid-column: 1/7;
+    justify-self: center;
+    margin: 0 auto;
+}
+
+.countener header .company-info h1 {
+    width: 90%;
+    margin: 0;
+}
+
+.countener header .header-image {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+}
+.countener header .header-image img{
+    width: 100%;
+}
